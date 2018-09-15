@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" id="vp" />
+    <title>淘宝客-搜索页</title>
+    <script type="text/javascript">
+        (function () {
+            var scale = 1.0;
+            var calculate = function () {
+                var width;
+                if (document.documentElement.clientHeight > document.documentElement.clientWidth) {
+                    width = document.documentElement.clientWidth;
+                } else {
+                    width = document.documentElement.clientHeight;
+                }
+                document.documentElement.style.fontSize = width / 7.5 + 'px';
+            };
+            var vp = document.getElementById('vp');
+            vp.content = 'width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no';
+            calculate();
+            window.addEventListener("resize", calculate, false);
+        })();
+    </script>
+    <link href="../css/search.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <div class="search-view-container" id="search-view-container" style="display: block;">
+        <div class="search-view-box">
+            <div class="search-view-top">
+                <div class="view-top-container">
+                    <form id="search-module-submit" action=""><input type="search" id="view-input" class="search-box-view-main"
+                            placeholder="提示文字" value=""></form>
+                    <div class="search-view-icon"></div>
+                    <div class="search-content-clear"></div>
+                </div>
+                <div class="submit-container-view">
+                    <div class="submit-button-view">搜索</div>
+                </div>
+            </div>
+            <ul class="search-suggestion-container" style="display: block;">
+                <li><span class="suggest-item-wraper">输入联想商品</span></li>
+                <li><span class="suggest-item-wraper">输入联想商品</span></li>
+                <li><span class="suggest-item-wraper">输入联想商品</span></li>
+                <li><span class="suggest-item-wraper">输入联想商品</span></li>
+                <li><span class="suggest-item-wraper">输入联想商品</span></li>
+                <li><span class="suggest-item-wraper">输入联想商品</span></li>
+                <li><span class="suggest-item-wraper">输入联想商品</span></li>
+                <li><span class="suggest-item-wraper">输入联想商品</span></li>
+                <li><span class="suggest-item-wraper">输入联想商品</span></li>
+                <li><span class="suggest-item-wraper">输入联想商品</span></li>
+            </ul>
+            <div class="search-main-view search-main-view-recent" style="display: none;">
+                <div class="search-recent-title-view">最近搜索</div>
+                <div class="search-recent-delete-view"></div>
+                <div class="search-recent-list-view"><span class="recent-history-list">男装套装</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部导航 -->
+    <div class="footer">
+        <ul class="nav-container">
+            <li class="nav-item">
+                <a class="nav-item-anchor nav-item-anchor--home active" href="javascript:void(0);">
+                    <i></i>推荐
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-anchor nav-item-anchor--category" href="javascript:void(0);">
+                    <i></i>分类
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-anchor nav-item-anchor--search" href="javascript:void(0);">
+                    <i></i>搜索
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

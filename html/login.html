@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" id="vp" />
+    <title>淘宝客-登录页</title>
+    <script type="text/javascript">
+        (function () {
+            var scale = 1.0;
+            var calculate = function () {
+                var width;
+                if (document.documentElement.clientHeight > document.documentElement.clientWidth) {
+                    width = document.documentElement.clientWidth;
+                } else {
+                    width = document.documentElement.clientHeight;
+                }
+                document.documentElement.style.fontSize = width / 7.5 + 'px';
+            };
+            var vp = document.getElementById('vp');
+            vp.content = 'width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no';
+            calculate();
+            window.addEventListener("resize", calculate, false);
+        })();
+    </script>
+    <link href="../css/login.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <div class="container" style="top: 0%;">
+        <form>
+            <div class="login-input">
+                <div class="input-group"><label for="user-mobile" id="icon1" class="phone-icon"></label><input type="tel"
+                        id="user-mobile" placeholder="手机号码"></div>
+                <hr>
+                <div class="input-group"><label for="input-code" id="icon2" class="phone-icon"></label><input type="tel"
+                        id="input-code" placeholder="密码"></div>
+            </div><button type="submit" id="submit-button">登录</button><button class="submit-button-login">返回</button>
+        </form>
+    </div>
+</body>
+
+</html>

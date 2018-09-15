@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" id="vp" />
+    <title>淘宝客-分类商品页</title>
+    <script type="text/javascript">
+        (function () {
+            var scale = 1.0;
+            var calculate = function () {
+                var width;
+                if (document.documentElement.clientHeight > document.documentElement.clientWidth) {
+                    width = document.documentElement.clientWidth;
+                } else {
+                    width = document.documentElement.clientHeight;
+                }
+                document.documentElement.style.fontSize = width / 7.5 + 'px';
+            };
+            var vp = document.getElementById('vp');
+            vp.content = 'width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', user-scalable=no';
+            calculate();
+            window.addEventListener("resize", calculate, false);
+        })();
+    </script>
+    <link href="../css/category_goods.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <div id="__next">
+        <div id="main" class="classification-app" data-reactroot="">
+            <div id="catgoods-container" class="container" style="">
+                <div class="catgoods-nav-placehorder" style="height: 0.82rem;"></div>
+                <div>
+                    <div class="nav-tab-wraper">
+                        <div class="nav-all-catgoods " id="catname-slide-up">
+                            <div class="nav-all-catgoods-header"><span>全部分类</span>
+                                <div class="nav-fix-cat-arrow-bg">
+                                    <div class="nav-fix-cat std-goods-imgage-arrow"></div>
+                                </div>
+                            </div>
+                            <div class="nav_all_catgoods_body">
+                                <div class="nav-all-catgoods-one" ms-repeat-cat="catList"><span class="nav-cur-catgoods-one">全部</span></div>
+                                <div class="nav-all-catgoods-one" ms-repeat-cat="catList"><span class="">饭煲电磁炉</span></div>
+                                <div class="nav-all-catgoods-one" ms-repeat-cat="catList"><span class="">按摩器材</span></div>
+                                <div class="nav-all-catgoods-one" ms-repeat-cat="catList"><span class="">洗衣机</span></div>
+                                <div class="nav-all-catgoods-one" ms-repeat-cat="catList"><span class="">厨房电器</span></div>
+                                <div class="nav-all-catgoods-one" ms-repeat-cat="catList"><span class="">个护健康</span></div>
+                                <div class="nav-all-catgoods-one" ms-repeat-cat="catList"><span class="">冰箱空调</span></div>
+                                <div class="nav-all-catgoods-one" ms-repeat-cat="catList"><span class="">生活电器</span></div>
+                                <div class="nav-all-catgoods-one" ms-repeat-cat="catList"><span class="">电火锅炖锅</span></div>
+                                <div class="nav-all-catgoods-one" ms-repeat-cat="catList"><span class="">电视厨卫</span></div>
+                            </div>
+                        </div>
+                        <div class="nav-fixed-wrap">
+                            <ul class="nav-fixed-catgoods ">
+                                <li class="fixed-nav-item-catgoods fixed-nav-item-catgoods-first"><span class="nav-cur-cat">全部</span></li>
+                                <li class="fixed-nav-item-catgoods"><span class="">饭煲电磁炉</span></li>
+                                <li class="fixed-nav-item-catgoods"><span class="">按摩器材</span></li>
+                                <li class="fixed-nav-item-catgoods"><span class="">洗衣机</span></li>
+                                <li class="fixed-nav-item-catgoods"><span class="">厨房电器</span></li>
+                                <li class="fixed-nav-item-catgoods"><span class="">个护健康</span></li>
+                                <li class="fixed-nav-item-catgoods"><span class="">冰箱空调</span></li>
+                                <li class="fixed-nav-item-catgoods"><span class="">生活电器</span></li>
+                                <li class="fixed-nav-item-catgoods"><span class="">电火锅炖锅</span></li>
+                                <li class="fixed-nav-item-catgoods"><span class="">电视厨卫</span></li>
+                            </ul>
+                            <div class="nav-fix-cat-btn">
+                                <div class="nav-fix-cat std-goods-imgage-arrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="catgoods" class="search-goods-list">
+                        <div id="catgoods-goods" class="sr-lists">
+                            <div class="double-list-v2">
+                                <div class="catgoods-list-wraper">
+                                    <div class="grid">
+                                        <div class="grid-container">
+                                            <div class="cell">
+                                                <div class="goods-item search-goods-item">
+                                                    <div class="goods-img std-goods-image-square"><img class="search-goods-img"
+                                                            data-param="70_!_t_!_!_50_!_!_!" src="//dummyimage.com/800x800/ff6f69/fff&text=goods"></div>
+                                                    <div class="detail ">
+                                                        <div class="name-block">
+                                                            <p class="goods-name ">【一刷就白】洗牙粉去牙渍去口臭去黄牙咖啡渍去牙垢牙齿美白牙膏</p>
+                                                        </div>
+                                                        <div class="core">
+                                                            <div class="info">
+                                                                <p class="sale-price"><i>￥</i>11.9</p>
+                                                                <p class="sold-quantity">已拼5.2万件</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell">
+                                                <div class="goods-item search-goods-item">
+                                                    <div class="goods-img std-goods-image-square"><img class="search-goods-img"
+                                                            data-param="70_!_t_!_!_50_!_!_!" src="//dummyimage.com/800x800/ff6f69/fff&text=goods"></div>
+                                                    <div class="detail ">
+                                                        <div class="name-block">
+                                                            <p class="goods-name ">【亏本促销】正品红三角多功能电饭煲智能预约定时电饭锅3L4L5L升</p>
+                                                        </div>
+                                                        <div class="core">
+                                                            <div class="info">
+                                                                <p class="sale-price"><i>￥</i>74.9</p>
+                                                                <p class="sold-quantity">已拼5.7万件</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell">
+                                                <div class="goods-item search-goods-item">
+                                                    <div class="goods-img std-goods-image-square"><img class="search-goods-img"
+                                                            data-param="70_!_t_!_!_50_!_!_!" src="//dummyimage.com/800x800/ff6f69/fff&text=goods">
+                                                        <div class="double-goods-mall-name">纳百川个人护理旗舰店</div>
+                                                    </div>
+                                                    <div class="detail with-tag">
+                                                        <div class="name-block">
+                                                            <p class="goods-name ">纳百川吸刮痧仪器经络疏通仪淋巴排毒按摩家用电动拔罐五行经络刷</p>
+                                                        </div>
+                                                        <div class="search-goods-tag"></div>
+                                                        <div class="core">
+                                                            <div class="info">
+                                                                <p class="sale-price"><i>￥</i>33</p>
+                                                                <p class="sold-quantity">已拼7.1万件</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell">
+                                                <div class="goods-item search-goods-item">
+                                                    <div class="goods-img std-goods-image-square"><img class="search-goods-img"
+                                                            data-param="70_!_t_!_!_50_!_!_!" src="//dummyimage.com/800x800/ff6f69/fff&text=goods"></div>
+                                                    <div class="detail with-tag">
+                                                        <div class="name-block">
+                                                            <p class="goods-name ">正品长虹7.5/8/9KG全自动洗衣机家用波轮热烘干大容量风干静音</p>
+                                                        </div>
+                                                        <div class="search-goods-tag"></div>
+                                                        <div class="core">
+                                                            <div class="info">
+                                                                <p class="sale-price"><i>￥</i>480</p>
+                                                                <p class="sold-quantity">已拼7.2万件</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell">
+                                                <div class="goods-item search-goods-item">
+                                                    <div class="goods-img std-goods-image-square"><img class="search-goods-img"
+                                                            data-param="70_!_t_!_!_50_!_!_!" src="//dummyimage.com/800x800/ff6f69/fff&text=goods"></div>
+                                                    <div class="detail with-tag">
+                                                        <div class="name-block">
+                                                            <p class="goods-name ">全身水洗智能4D多功能电动剃须刀充电式车载刮胡刀飞利瑞科胡须刀</p>
+                                                        </div>
+                                                        <div class="search-goods-tag"></div>
+                                                        <div class="core">
+                                                            <div class="info">
+                                                                <p class="sale-price"><i>￥</i>39</p>
+                                                                <p class="sold-quantity">已拼10万+件</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell">
+                                                <div class="goods-item search-goods-item">
+                                                    <div class="goods-img std-goods-image-square"><img class="search-goods-img"
+                                                            data-param="70_!_t_!_!_50_!_!_!" src="//dummyimage.com/800x800/ff6f69/fff&text=goods"></div>
+                                                    <div class="detail with-tag">
+                                                        <div class="name-block">
+                                                            <p class="goods-name ">双喜大号加深32/3CM双面煎烤悬浮加热家用电饼铛煎薄饼机烙饼档锅</p>
+                                                        </div>
+                                                        <div class="search-goods-tag"></div>
+                                                        <div class="core">
+                                                            <div class="info">
+                                                                <p class="sale-price"><i>￥</i>98</p>
+                                                                <p class="sold-quantity">已拼10万+件</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell">
+                                                <div class="goods-item search-goods-item">
+                                                    <div class="goods-img std-goods-image-square"><img class="search-goods-img"
+                                                            data-param="70_!_t_!_!_50_!_!_!" src="//dummyimage.com/800x800/ff6f69/fff&text=goods"></div>
+                                                    <div class="detail with-tag">
+                                                        <div class="name-block">
+                                                            <p class="goods-name ">官方正品】HTC剃须刀电动刮胡刀3头浮动剃须智能防夹胡须刀GT606B</p>
+                                                        </div>
+                                                        <div class="search-goods-tag"></div>
+                                                        <div class="core">
+                                                            <div class="info">
+                                                                <p class="sale-price"><i>￥</i>69</p>
+                                                                <p class="sold-quantity">已拼699件</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cell">
+                                                <div class="goods-item search-goods-item">
+                                                    <div class="goods-img std-goods-image-square"><img class="search-goods-img"
+                                                            data-param="70_!_t_!_!_50_!_!_!" src="//dummyimage.com/800x800/ff6f69/fff&text=goods">
+                                                        <div class="double-goods-mall-name">创若数码专营店</div>
+                                                    </div>
+                                                    <div class="detail with-tag">
+                                                        <div class="name-block">
+                                                            <p class="goods-name ">正品长虹7.5/8/9KG全自动洗衣机家用波轮热烘干大小容量滚筒静音</p>
+                                                        </div>
+                                                        <div class="search-goods-tag"></div>
+                                                        <div class="core">
+                                                            <div class="info">
+                                                                <p class="sale-price"><i>￥</i>480</p>
+                                                                <p class="sold-quantity">已拼2572件</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bgt-go-top bgt-top-button-hide" role="button"><span>顶部</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部导航 -->
+    <div class="footer">
+        <ul class="nav-container">
+            <li class="nav-item">
+                <a class="nav-item-anchor nav-item-anchor--home active" href="javascript:void(0);">
+                    <i></i>推荐
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-anchor nav-item-anchor--category" href="javascript:void(0);">
+                    <i></i>分类
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item-anchor nav-item-anchor--search" href="javascript:void(0);">
+                    <i></i>搜索
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
